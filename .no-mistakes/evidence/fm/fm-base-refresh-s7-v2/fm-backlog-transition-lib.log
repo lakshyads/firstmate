@@ -1,0 +1,3 @@
+ok - pending-close replay accepts legacy and named local landing notes
+ok - pending-close serialization accepts a named local landing note
+# all fm-backlog-transition-lib tests passed
