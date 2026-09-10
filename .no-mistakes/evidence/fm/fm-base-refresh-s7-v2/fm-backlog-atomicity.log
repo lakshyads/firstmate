@@ -1,1 +1,6 @@
-not ok - spawn failed: error: task atomic-dispatch-b1 cannot be dispatched because its backlog data directory is inaccessible: /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-backlog-atomicity.xYCJ7Z/dispatch-ok/home/data (automatic backlog transitions require tasks-axi 0.2.4 or newer with the required update and mv features)
+ok - backend resolution preserves unreadable configuration errors for every caller
+ok - backend resolution preserves environment, project, user, and default precedence
+ok - backlog readers and mutations refuse unresolved backends without touching either backlog
+not ok - captain hold did not report its configuration error (missing: 'tasks-axi backend configuration cannot be read at /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-backlog-atomicity.8iIG9P/backend-hold-dangling/home/.tasks.toml')
+--- output ---
+fm-captain-hold: compatible tasks-axi is required

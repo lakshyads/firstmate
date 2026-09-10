@@ -1,0 +1,9 @@
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+fatal: update_ref failed for ref 'refs/heads/develop': cannot lock ref 'refs/heads/develop': is at b5f1754a470ea9a7e445c85a09113fb798d73361 but expected 47847c08936d2826e852066dd343359f46faa65c
+PASS: resolved target SHA expected-old guard rejected a concurrent landing-target advance; target remained b5f1754a470ea9a7e445c85a09113fb798d73361
