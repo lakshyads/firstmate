@@ -1,0 +1,9 @@
+command: bash tests/fm-review-diff.test.sh
+exit: 0
+observed:
+ok - fm-review-diff uses recorded base_branch= as compare base, default otherwise
+ok - fm-review-diff uses a local recorded base without resolving the default
+ok - fm-review-diff preserves the remote-default fallback without a recorded base
+ok - fm-review-diff falls back to the local default without a remote branch
+ok - fm-review-diff falls back to a local recorded base for scouts
+ok - fm-review-diff honors a recorded base when no default branch exists
