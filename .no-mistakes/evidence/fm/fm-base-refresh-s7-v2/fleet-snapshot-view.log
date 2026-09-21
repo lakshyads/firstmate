@@ -1,5 +1,5 @@
 ok - empty fleet snapshot and view use explicit absence markers
-ok - fixture snapshot covers task rows, backlog rows, pointers, and stable ordering
+ok - fixture snapshot covers task rows, backlog rows, pointers, stable ordering, and emission-time event age
 ok - home-summary excludes kind=secondmate from unowned_current and terminal_in_flight
 ok - undated captain holds age after a configurable threshold, decided only from structured fields
 ok - captain-hold buckets are total, mutually exclusive, and never decided by prose

@@ -1,0 +1,20 @@
+$ FM_HOME=... bin/fm-brief.sh manual-base project --mode local-only --base-branch develop --branch-name feature/manual
+scaffolded: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-manual-smoke.gpt6dW/home/data/manual-base/brief.md (ship, mode=local-only; replace {TASK} and {FIRSTMATE_SPEC})
+--- generated contract and delivery lines ---
+82:Keep your branch a clean fast-forward onto `develop` - if that base has advanced, rebase onto it so the eventual merge stays a fast-forward.
+83:When it is implemented and committed, append `done [at=<epoch>]: ready in branch feature/manual` to the status file and stop.
+84:The configured merge authority approves the ready branch, then firstmate merges it into local `develop` through the guarded fast-forward path.
+85:Base branch contract: base_branch=develop
+86:Crew branch: branch=feature/manual
+--- collision refusal ---
+error: --base-branch cannot be the crew branch (fm/manual-collision): use --branch-name on a ship brief to choose a different crew branch
+--- real local landing ---
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+merged feature/manual into local main (d770ac7 -> 71c5a1e) in /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-manual-smoke.gpt6dW/project
+main=71c5a1e feature=71c5a1e
