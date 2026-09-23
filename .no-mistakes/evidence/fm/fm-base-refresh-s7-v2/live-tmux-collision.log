@@ -1,0 +1,65 @@
+first_spawn_rc=0
+second_spawn_rc=1
+--- live-b stdout ---
+--- live-b stderr ---
+error: crew branch feature/live-collision is already assigned to task live-a; refusing to launch a fresh task with a shared branch
+--- control pane ---
+^C%
+Mac% env -u NO_MISTAKES_GATE FM_GATE_REFUSE_BYPASS=1 FM_SPAWN_NO_GUARD=1 FM_ROOT_OVERRIDE=/Users/lakshyadevsingh/.no-mistakes/worktrees/3980b3023422/01M37F8AZCB
+RF1GAR3713A070G FM_HOME=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/home /Users/lakshyadevsingh/.no-mistakes/worktrees/3980b30234
+22/01M37F8AZCBRF1GAR3713A070G/bin/fm-spawn.sh live-a /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/project "sh -c 'echo live-a-ok'"
+ --mode local-only --yolo off --base-branch develop --backend tmux >/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/live-a.out 2>/var
+/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/live-a.err; echo $? >/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.
+QLNVqB/live-a.rc
+Mac%
+Mac% env -u NO_MISTAKES_GATE FM_GATE_REFUSE_BYPASS=1 FM_SPAWN_NO_GUARD=1 FM_ROOT_OVERRIDE=/Users/lakshyadevsingh/.no-mistakes/worktrees/3980b3023422/01M37F8AZCB
+RF1GAR3713A070G FM_HOME=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/home /Users/lakshyadevsingh/.no-mistakes/worktrees/3980b30234
+22/01M37F8AZCBRF1GAR3713A070G/bin/fm-spawn.sh live-b /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/project "sh -c 'echo live-b-ok'"
+ --mode local-only --yolo off --base-branch develop --backend tmux >/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/live-b.out 2>/var
+/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/live-b.err; echo $? >/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.
+QLNVqB/live-b.rc
+Mac%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- task records ---
+/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-live-collision.QLNVqB/home/state/live-a.meta
+window=fm-lab-tmux-17852:fm-live-a
+endpoint_task_id=live-a
+worktree=/Users/lakshyadevsingh/.treehouse/project-0a56f6/1/project
+project=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-live-collision.QLNVqB/project
+harness=sh
+kind=ship
+mode=local-only
+yolo=off
+base_branch=develop
+crew_branch=feature/live-collision
+tasktmp=/tmp/fm-live-a
+model=default
+effort=default
+spawn_gen=s1790182610.18005.898
+--- private tmux windows ---
+zsh
+fm-live-a

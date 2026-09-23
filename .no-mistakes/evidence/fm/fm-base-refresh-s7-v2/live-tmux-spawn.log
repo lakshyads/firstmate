@@ -1,0 +1,20 @@
+spawn_rc=0
+--- stdout ---
+spawned live-spawn harness=sh kind=ship mode=local-only yolo=off window=fm-lab-tmux-81604:fm-live-spawn worktree=/Users/lakshyadevsingh/.treehouse/project-fe0361/1/project
+--- stderr ---
+notice: live-spawn ships mode=local-only while the standing posture for project is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+--- meta ---
+window=fm-lab-tmux-81604:fm-live-spawn
+endpoint_task_id=live-spawn
+worktree=/Users/lakshyadevsingh/.treehouse/project-fe0361/1/project
+project=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-live-spawn.1zQF1n/project
+harness=sh
+kind=ship
+mode=local-only
+yolo=off
+base_branch=develop
+crew_branch=feature/live-spawn
+tasktmp=/tmp/fm-live-spawn
+model=default
+effort=default
+spawn_gen=s1790182511.81841.24176

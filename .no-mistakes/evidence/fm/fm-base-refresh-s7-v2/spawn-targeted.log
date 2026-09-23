@@ -1,0 +1,9 @@
+ok - spawn resolves origin's default before accepting a custom crew branch
+ok - spawn refuses a crew branch already assigned to another task
+ok - a stale pooled worktree resolves and refreshes a non-main default branch
+ok - an unresolved remote default branch refuses the pooled worktree
+ok - an origin-less pooled worktree launches as-is, skipping the freshness gate
+ok - local-only spawn prefers the local named base over origin
+ok - local-only --base-branch refuses when the base exists only on origin
+ok - scout spawn honors a matching --base-branch contract from Definition of done
+ok - spawn refuses a custom crew branch equal to the project default
