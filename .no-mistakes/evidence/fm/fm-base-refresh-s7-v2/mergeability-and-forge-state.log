@@ -1,0 +1,21 @@
+$ git show -s --format=%H%n%P HEAD
+33f91bebf21c26f7bc28a5afd09728345f041137
+e655e15c0c7c700f2b5acdcdd465acb93f1acf54 c00d5e1ebeba1927ed95a6e28ade7c4f01fc19b3
+$ git rev-parse HEAD^2 origin/main
+c00d5e1ebeba1927ed95a6e28ade7c4f01fc19b3
+c00d5e1ebeba1927ed95a6e28ade7c4f01fc19b3
+$ git merge-tree --write-tree HEAD^1 HEAD^2
+2df9dd883207de87509a526755ee565785724de2
+$ git diff --check HEAD^1 HEAD
+$ gh-axi pr view 4071
+pull_request:
+  number: 4071
+  title: "feat(bin): support custom base and crew branches"
+  state: open
+  author: lakshyads05
+  draft: no
+  merged: no
+  checks: "0 passed, 0 failed — this PR has no CI checks configured"
+  body: "## What Changed\n\n- Added optional `--base-branch` and `--branch-name` contracts to brief and spawn flows, including validation, pooled-worktree freshening, and metadata persistence through relaunch and promotion.\n- Updated review, local merge, teardown, backlog transition, and fleet snapshot flows to honor recorded landing and crew branches while preserving legacy defaults.\n- Added shared brief-contract parsing plus documentation and regression coverage for branch selection and lifecycle behavio\n... (truncated, 11862 chars total - use --full to see complete body)"
+  comment_count: 19 — use --comments to see full comments
+  review_count: 2 — use --reviews to see full reviews
