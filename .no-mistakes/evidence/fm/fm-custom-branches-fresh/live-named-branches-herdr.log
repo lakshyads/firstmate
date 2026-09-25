@@ -1,0 +1,3 @@
+LIVE_HERDR_SPAWN branch=feature/widget base_branch=office worktree_head=6f7976dbc0d0db6e341eaa001d1f1ffcdae3124f selected_base_head=6f7976dbc0d0db6e341eaa001d1f1ffcdae3124f head_state=detached backend=herdr herdr_session=fm-lab-named-branches-l-79388-27372
+LIVE_HERDR_TEARDOWN removed_meta=true
+LIVE_HERDR_MISSING_BASE rc=1 meta_absent=true endpoint_absent=true
