@@ -1,0 +1,5 @@
+not ok - fm-spawn.sh did not succeed auto-detecting herdr
+--- stdout ---
+
+--- stderr ---
+error: could not resolve the shared project lock for /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-backend-autodetect-smoke.JlgR2J/scratch-project
