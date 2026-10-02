@@ -1,0 +1,18 @@
+--- plain (no --base-branch) meta:
+window=primary:fm-plain
+endpoint_task_id=plain
+worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/3/demo
+project=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/projects/demo
+harness=claude
+kind=ship
+mode=direct-PR
+yolo=off
+branch=fm/plain
+tasktmp=/tmp/fm-plain
+model=default
+effort=default
+busy_gen=g1790973522.27468.13528
+spawn_gen=s1790973522.26775.16710
+copy HEAD: ee93ebc07eae23bac711a69df837017c97d4c489  origin/main: ee93ebc07eae23bac711a69df837017c97d4c489
+files: README.md 
+0

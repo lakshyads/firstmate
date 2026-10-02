@@ -1,0 +1,5 @@
+$ fm-promote.sh hub-scout --mode local-only --yolo off
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+warn: no registry at /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/projects.md; defaulting demo to no-mistakes off
+error: fm-promote.sh hub-scout: a base branch cannot ship mode=local-only, whose landing fast-forwards local main; ship no-mistakes or direct-PR, which open a pull request against the base
+[exit 1]

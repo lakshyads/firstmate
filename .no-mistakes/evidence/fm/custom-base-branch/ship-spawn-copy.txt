@@ -1,0 +1,5 @@
+ship worker copy HEAD: 9c881af176ad6c768e4b868db996bd33f970d8c2
+origin/feature/hub:    9c881af176ad6c768e4b868db996bd33f970d8c2
+branch: 
+feature-only.txt
+README.md

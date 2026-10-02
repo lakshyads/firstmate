@@ -1,0 +1,31 @@
+$ fm-spawn.sh flagonly /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout --base-branch feature/hub
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+error: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/flagonly/brief.md must record Base branch: feature/hub and no other Base branch line to spawn with --base-branch feature/hub; scaffold it with bin/fm-brief.sh --base-branch feature/hub
+[exit 1]
+
+$ fm-spawn.sh lineonly /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+error: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/lineonly/brief.md records a Base branch line but the spawn has no --base-branch; pass the brief's base with --base-branch or re-scaffold the brief without one
+[exit 1]
+
+$ fm-spawn.sh decoy /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout --base-branch feature/hub
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+error: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/decoy/brief.md must record Base branch: feature/hub and no other Base branch line to spawn with --base-branch feature/hub; scaffold it with bin/fm-brief.sh --base-branch feature/hub
+[exit 1]
+
+$ fm-spawn.sh sm --secondmate --base-branch feature/hub
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+error: --base-branch applies only to ship and scout spawns; a secondmate charter has no task base
+[exit 1]
+
+$ fm-spawn.sh flagonly /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --mode local-only --yolo off --base-branch feature/hub
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+error: fm-spawn.sh --base-branch: a base branch cannot ship mode=local-only, whose landing fast-forwards local main; ship no-mistakes or direct-PR, which open a pull request against the base
+[exit 1]
+
+$ fm-spawn.sh missing /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout --base-branch feature/missing
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+fatal: couldn't find remote ref refs/heads/feature/missing
+error: could not fetch 'origin/feature/missing' for pooled worktree '/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/1/demo'; refusing to launch from a potentially stale base
+[exit 1]
+

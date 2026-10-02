@@ -1,0 +1,17 @@
+$ fm-spawn.sh hub-scout /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout --base-branch feature/hub --harness claude
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+spawned hub-scout harness=claude kind=scout window=primary:fm-hub-scout worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/1/demo
+[exit 0]
+
+$ fm-spawn.sh hub-dpr /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --mode direct-PR --yolo off --base-branch feature/hub --harness claude
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+notice: hub-dpr ships mode=direct-PR while the standing posture for demo is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+spawned hub-dpr harness=claude kind=ship mode=direct-PR yolo=off window=primary:fm-hub-dpr worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo
+[exit 0]
+
+$ fm-spawn.sh decoyeq /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/projects/demo --scout --base-branch feature/hub --harness claude
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+spawned decoyeq harness=claude kind=scout window=primary:fm-decoyeq worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo
+[exit 0]
+

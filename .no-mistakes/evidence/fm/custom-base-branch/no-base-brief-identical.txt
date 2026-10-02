@@ -1,0 +1,3 @@
+plain: no-base brief identical to base commit 87fa81b output (after normalizing script root path)
+pnm: no-base brief identical to base commit 87fa81b output (after normalizing script root path)
+psc: no-base brief identical to base commit 87fa81b output (after normalizing script root path)

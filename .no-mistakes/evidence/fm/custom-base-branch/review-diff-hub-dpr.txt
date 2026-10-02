@@ -1,0 +1,6 @@
+$ fm-review-diff.sh hub-dpr --stat
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+diff base: origin/feature/hub
+ work.txt | 1 +
+ 1 file changed, 1 insertion(+)
+[exit 0]

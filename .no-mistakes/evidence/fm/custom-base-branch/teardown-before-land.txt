@@ -1,0 +1,8 @@
+$ fm-teardown.sh hub-dpr
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+REFUSED: worktree /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo has work not on any remote and not landed.
+unpushed commits:
+2612f99 hub work
+Push the branch, land its PR, or get the captain's explicit OK to discard, then --force.
+[exit 1]

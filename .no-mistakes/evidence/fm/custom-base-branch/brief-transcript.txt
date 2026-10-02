@@ -1,0 +1,32 @@
+$ fm-brief.sh hub-dpr demo --mode direct-PR --base-branch feature/hub
+scaffolded: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/hub-dpr/brief.md (ship, mode=direct-PR; replace {TASK} and {FIRSTMATE_SPEC})
+[exit 0]
+$ fm-brief.sh hub-nm demo --mode no-mistakes --base-branch feature/hub
+scaffolded: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/hub-nm/brief.md (ship, mode=no-mistakes; replace {TASK} and {FIRSTMATE_SPEC})
+[exit 0]
+$ fm-brief.sh hub-scout demo --scout --base-branch feature/hub
+scaffolded: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/hub-scout/brief.md (scout; replace {TASK} and {FIRSTMATE_SPEC})
+[exit 0]
+$ fm-brief.sh plain demo --mode direct-PR
+scaffolded: /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/data/plain/brief.md (ship, mode=direct-PR; replace {TASK} and {FIRSTMATE_SPEC})
+[exit 0]
+--- refusals ---
+$ --mode local-only --base-branch feature/hub
+error: fm-brief.sh --base-branch: a base branch cannot ship mode=local-only, whose landing fast-forwards local main; ship no-mistakes or direct-PR, which open a pull request against the base
+[exit 1]
+$ --mode direct-PR --forge gerrit --base-branch feature/hub
+error: fm-brief.sh --base-branch: a base branch is not supported on forge=gerrit
+[exit 1]
+$ --mode direct-PR --base-branch "bad..name"
+error: fm-brief.sh --base-branch: base branch 'bad..name' is not a valid git branch name
+[exit 1]
+$ --mode direct-PR --base-branch -x
+error: fm-brief.sh --base-branch: base branch '-x' is not a valid git branch name
+[exit 1]
+$ --secondmate --base-branch feature/hub
+error: --base-branch takes a branch name and applies only to ship and scout briefs
+[exit 1]
+hub-dpr
+hub-nm
+hub-scout
+plain

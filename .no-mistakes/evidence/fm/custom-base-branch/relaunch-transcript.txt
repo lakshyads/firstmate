@@ -1,0 +1,29 @@
+$ fm-spawn.sh hub-dpr --relaunch --base-branch other
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+error: --relaunch reuses the task's recorded base branch; --base-branch cannot override it
+[exit 1]
+$ fm-control.sh hub-dpr relaunch --note-file /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5/note.txt
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+notice: hub-dpr ships mode=direct-PR while the standing posture for demo is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+relaunched hub-dpr harness=claude from=claude model=default effort=default backend=tmux endpoint=primary:fm-hub-dpr worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo
+[exit 0]
+--- meta after relaunch:
+window=primary:fm-hub-dpr
+endpoint_task_id=hub-dpr
+worktree=/private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo
+project=/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/projects/demo
+harness=claude
+kind=ship
+mode=direct-PR
+yolo=off
+branch=fm/hub-dpr
+tasktmp=/tmp/fm-hub-dpr
+base_branch=feature/hub
+model=default
+effort=default
+busy_gen=g1790973873.35764.29108
+spawn_gen=s1790973873.35296.32627
+control_relaunch_tx=34783.20261002T204432Z.7508

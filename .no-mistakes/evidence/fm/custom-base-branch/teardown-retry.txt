@@ -1,0 +1,9 @@
+$ fm-teardown.sh hub-dpr
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T//fm-lab.PKJQM5
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+A new version of treehouse is available: v2.3.0 → v3.1.1
+Run "treehouse update" to update
+
+worktree /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo is not managed by treehouse
+error: treehouse return failed for worktree /private/var/folders/9_/lqnhn5_j6vz053wzxq2mk9rm0000gn/T/fm-lab.PKJQM5/th/.treehouse/demo-96df6c/2/demo; teardown aborted
+[exit 1]
